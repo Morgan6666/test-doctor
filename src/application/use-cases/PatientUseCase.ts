@@ -53,20 +53,23 @@ export class PatientUsecase {
       
       
       if(Number(result[i].days_diff) == 1 &&  Number(result[i].hours_diff) == 6 && Number(result[i].mins_diff) == 0){
-        const mail =  await this.emailService.sendMail({
-          to: "test@mail.ru",
-          subject: "Оповещение" ,
-          text: `ФИО доктора:\n${result[i].doctor_first_name} ${result[i].doctor_last_name} ${result[i].doctor_surname}\nДата:${result[i].patient_time}\nВремя приёма:${result[i].patient_time.split(' ')[1].split(":").slice(0, 2).join(":")}\nАдресс:${result[i].clinick_address}`
-        })
+        console.log("Mock:(")
+        
+        // const mail =  await this.emailService.sendMail({
+        //   to: "test@mail.ru",
+        //   subject: "Оповещение" ,
+        //   text: `ФИО доктора:\n${result[i].doctor_first_name} ${result[i].doctor_last_name} ${result[i].doctor_surname}\nДата:${result[i].patient_time}\nВремя приёма:${result[i].patient_time.split(' ')[1].split(":").slice(0, 2).join(":")}\nАдресс:${result[i].clinick_address}`
+        // })
     
       }
       else if(Number(result[i].days_diff) == 0  && Number(result[i].hours_diff) == 1 && Number(result[i].mins_diff) == 30){
+        console.log("Mock:(")
         
-       const mail =  await this.emailService.sendMail({
-            to: "test@mail.ru",
-            subject: "Оповещение" ,
-            text: `ФИО доктора:\n${result[i].doctor_first_name} ${result[i].doctor_last_name} ${result[i].doctor_surname}\nДата:${result[i].patient_time}\nВремя приёма:${result[i].patient_time.split(' ')[1].split(":").slice(0, 2).join(":")}\nАдресс:${result[i].clinick_address}`
-          })
+      //  const mail =  await this.emailService.sendMail({
+      //       to: "test@mail.ru",
+      //       subject: "Оповещение" ,
+      //       text: `ФИО доктора:\n${result[i].doctor_first_name} ${result[i].doctor_last_name} ${result[i].doctor_surname}\nДата:${result[i].patient_time}\nВремя приёма:${result[i].patient_time.split(' ')[1].split(":").slice(0, 2).join(":")}\nАдресс:${result[i].clinick_address}`
+      //     })
       }
       
     }
