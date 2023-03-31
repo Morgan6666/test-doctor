@@ -1,0 +1,1 @@
+{"version":3,"file":"IRepository.js","sourceRoot":"","sources":["../../../src/application/ports/IRepository.ts"],"names":[],"mappings":";;;;;;;;;AAAA,2CAA4C;AAG5C;IAAA,IAAsB,WAAW,GAAjC,MAAsB,WAAW;KAOhC,CAAA;IAPqB,WAAW;QADhC,mBAAU,EAAE;OACS,WAAW,CAOhC;IAAD,kBAAC;KAAA;AAPqB,kCAAW"}

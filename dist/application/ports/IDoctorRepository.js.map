@@ -1,0 +1,1 @@
+{"version":3,"file":"IDoctorRepository.js","sourceRoot":"","sources":["../../../src/application/ports/IDoctorRepository.ts"],"names":[],"mappings":";;;;;;;;;AAAA,2CAA4C;AAC5C,iEAAwD;AACxD,+CAA4C;AAI5C;IAAA,IAAsB,iBAAiB,GAAvC,MAAsB,iBAAkB,SAAQ,yBAAwB;KAAE,CAAA;IAApD,iBAAiB;QADtC,mBAAU,EAAE;OACS,iBAAiB,CAAmC;IAAD,wBAAC;KAAA;AAApD,8CAAiB"}
