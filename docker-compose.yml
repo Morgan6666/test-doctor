@@ -1,0 +1,14 @@
+ medbase:
+    image: postgres:latest
+    command: postgres -c 'max_connections=1000'
+    volumes:
+      - /var/local/sdb/med:/var/lib/postgresql/data
+    container_name: medbase
+    ports:
+      - "5439:5432"
+    environment:
+      - POSTGRES_USER=morgan
+      - POSTGRES_DB=medbase
+      - POSTGRES_PASSWORD=test
+    restart: unless-stopped
+
